@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Assignment 4 by X Æ A-12</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="Home.html" class="logo"><strong>Assignment 4</strong> <span>by X Æ A-12</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="Home.html">Home</a></li>
+						<li><a href="Team_Profile.html">Team profile</a></li>
+						<li><a href="Project_O.html">Project overview</a></li>
+						<li><a href="Project_D.html">project: detailed description</a></li>
+						<li><a href="Skills_and_Jobs.html">skills and jobs</a></li>
+						<li><a href="Group_Reflection.html">group redlection</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#" class="button primary fit">Get Started</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Week 4 - Uploading to Unity and Testing</h1>
+									</header>
+									<p>In week 4, Beverly was allocated to building the world while others were focusing on finishing up the report. She progressed through timeline phases 3-6 (Building the Classroom, Applying VRCSDK2, Uploading onto VRC Servers, Testing and Debugging). </p>
+									<p><strong>World Development Process and Notes- Written by Beverly in first-person</strong></br>
+									<strong>Creating a Test World</strong></br>
+									First and foremost, to test and experiment with VRChat’s SDK and Unity tools, created a mock-up world featuring an object with gravity, an object without, and a button that toggles a mirror. Figure below features the three stages of the mock-up process, the image on the left shows the building concept in Unity, right showcases the unpublished world for testing, and bottom shows the published world on VRChat. </p>
+									<img src="picture/Picture79.png" alt="">
+									<p>Figure - the three stages of the mock up process of creating and uploading  a VR world on VRChat serves.</p>
+									<p>In the test world I noticed I couldn't jump even though I added a component that enabled that action, other than that there were no issues and I felt comfortable moving onto developing the classroom. Aspects that I liked that I will take into the classroom is the skybox which emitted a calming warm tone onto the scene. </p>
+									
+									<p><strong>Creating the Classroom - Building the Foundations </strong></br>
+										First and foremost, to create a vector perfect scene, I developed the foundation of the VR room in  Blender. My first attempt consisted of layering four flat rectangles together to create a window hole, when I exported this file to blender it caused overlapping texture complications and was overall unappealing. Below (Figure) is a screencap from the failed attempt. </p>
+										<img src="picture/Picture80.png" alt="">
+										<img src="picture/Picture81.png" alt="">
+										<p>Figure - First attempt of creating the classroom foundation</p>
+									<p>In my second attempt, I made use of tools such as ‘loop cut’ in Edit Mode. With this and a few other functions, I created a scene without the complications mentioned prior. In the unity preview (left) the walls do not appear from the outside looking in. This is not ideal, but doesn’t make a difference since the user will not leave the room anyways, on the flip-side, this does make building slightly easier. </p>
+										<img src="picture/Picture82.png" alt="">
+										<img src="picture/Picture83.png" alt="">
+										<p>Figure - Second attempt of creating the classroom foundation</p>
+									<p><strong>Creating the Classroom - Importing Interior</strong></br>
+										After the classroom was successfully implemented into Unity, the next step was to begin adding interior. Throughout this project, I only used assets available from Sketchfab.com where independent creators and artists can offer free or paid assets to consumers. I credited each asset I used in the references below. It was ideal that each asset I downloaded was in an .fbx file, although .blend files were do-able too. 
+										There were some assets that did not completely fit the criteria that I needed, therefore I simply ‘unpacked’ the prefab, which allowed me to make changes to the prefab and deleted parts that I did not want. For example, the window that I imported had planes covering the window so the user could not see outside, I simply just selected and deleted these assets (see below). 
+										</p>
+										<img src="picture/Picture84.png" alt="">
+										<p>Figure - Window with a deleted plane (left) and its unremoved plane (right)</p>
+									<p><strong>Creating the Classroom - First Test Build</strong></br>
+										Below I have written some notes for my first test build.</p>
+									<ul>
+										<li>Reflection in mirror too bright, need to fix lighting</li>
+										<li>Whiteboard too tall for an average avatar height</li>
+										<li>Roof doesn’t render</li>
+										<li>Jumping slightly glitched</li>
+										<li>Physics components work fine</li>
+										<li>Colliders work well</li>
+										<li>Items don’t respawn OR fall infinitely</li>
+									</ul>
+									<img src="picture/Picture85.png" alt="">
+									<p>Figure - First test build</p>
+									<p><strong>Creating the Classroom - Second Test Build</strong></br>
+										Second test build notes</p>
+										<ul>
+											<li>Mirror still bad</li>
+											<li>Door too tall</li>
+											<li>Able to phase through table + cupboard + whiteboard</li>
+											<li>Cupboard possibly too tall</li>
+										</ul>
+									<img src="picture/Picture86.png" alt="">
+									<img src="picture/Picture87.png" alt="">
+									<p>Figure - Second test build</p>
+									<p><strong>Creating the Classroom - Third Test Build</strong></br>
+										</p>
+										<ul>
+											<li>Relocated mirror</li>
+											<li>Added more vibrant colours and toys</li>
+											<li>Relocated table and added shelf instead</li>
+											<li>Added backpacks on hooks</li>
+											<li>Toy parts with pickup enabled kept falling through ground</li>
+												<ul>
+													<li>Added mesh colliders (did not fix issue)</li>
+													<li>Swapped for box colliders (fixed issue)</li>
+												</ul>
+										</ul>
+									<img src="picture/Picture88.png" alt="">
+									<img src="picture/Picture89.png" alt="">
+									<img src="picture/Picture90.png" alt="">
+									<p>Figure - Third test build</p>
+									<p><strong>Creating the Classroom -  Fourth Test Build</strong></br>
+										</p>
+										<ul>
+											<li>Added more vibrant colours to appeal to our target age group (8-12)</li>
+											<li>Forgot to make organ objects floating with no gravity, so they clipped and flew out of the original positions when world loaded</li>
+											<li>Crate stool doesn't work to elevate the user to higher places. Users just phase through it</li>
+											<li>Media player works</li>
+											<li>Toy parts do not clip from ground</li>
+										</ul>
+									<img src="picture/Picture91.png" alt="">
+									<img src="picture/Picture93.png" alt="">
+									<p>Figure - Fourth test build</p>
+									<p><strong>Creating the Classroom - Fifth Test Build</strong></br>
+										</p>
+										<ul>
+											<li>Fixed mirror by deleting the extra lighting created imported by the initial blender house-box</li>
+											<li>Everything works</li>
+											<li>Relocated table and added shelf instead</li>
+											<li>Objects are a bit too big so it’s hard to correctly position them on the labels</li>
+											<li>Buttons work perfectly</li>
+											<li>Buttons are global- everyone in the instances sees changes, not just the user</li>
+											<li>Organs clip through walls sometimes, organs are too big and sometimes obstructive</li>
+												<ul>
+													<li>Due to time constraints i cannot fix this issue</li>
+													<li>Organs sometimes break- they will lag when the user tries to hold them</li>
+												</ul>
+										</ul>
+									<img src="picture/Picture94.png" alt="">
+									<img src="picture/Picture95.png" alt="">
+									<p>Figure - Fifth test build</p>
+
+									<p><strong>Creating the Classroom - Showcasing buttons</strong></br>
+										Below shows the amount of objects that are connected to a single button, in this case, the ‘Human Body’ class alone is connected to several items that will toggle on once interacted with (see the white lines in Figure). Several items that are not visually present below (such as instructions, organs, and other buttons) will be toggled on when the user selects the Human Body button in-game, also, the Human Body button also toggles off the dinosaur photo. </p>
+										<img src="picture/Picture99.png" alt="">
+										<p></p>
+										<img src="picture/Picture100.png" alt="">
+										<p></p>
+										<img src="picture/Picture101.png" alt="">
+									<p>Figure - Showcasing buttons </p>
+									<p><strong>Creating the Classroom - Showcasing Some Configurations</strong></br>
+										Below are some of the configurations of specific items that instructed them to function the way I intend for them to do. Figure is the configuration to set for a button to specifically display the minigame answers once completed, I have highlighted some important settings to note. I have done the same for Figure, which is the configuration for setting objects to float in a static position.</p>
+										<img src="picture/Picture96.png" alt="">
+										<img src="picture/Picture97.png" alt="">
+									<p>Figure - Configuration on setting objects to float in a static position</p>
+									<p><strong>Creating the Classroom - Completed Artefact</strong></br>
+										This completed artefact was published to Windows and Android, which means that PC users and mobile VR users (such as Oculus Quest 2 owners) may be able to access the world. Below shows the confirmation that the world has been published.
+									</p>
+									<img src="picture/Picture98.png" alt="">
+									<p>Figure - proof of the world being published</p>
+									<p><strong>Conclusion</strong></br>>
+										Overall, we were able to progress through all the tasks we set to complete within the timeframe. If another group were to pick up where we left off, they would simply need to choose another of our pre-written classroom lessons, expand upon it and execute it in the same process that I have done above. Something that I would like the next team to know is- make your lesson designs, floor plans, and object drafts excessively detailed. This will help a lot in the building stages of the project. Personally, i would not have produced such a, organised and pleasant space without Alisa and Vansh’s great lesson and floor plans. </p>
+
+
+									
+											
+
+
+
+
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Assignment 4</li><li>Design:<a href="Home.html"></a> X Æ A-12</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
